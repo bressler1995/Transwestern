@@ -1,0 +1,1003 @@
+body, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.transwest_nav_collapse ul.navbar-nav li.nav-item a, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Montserrat';
+}
+
+p, span, a, button, input, li {
+  font-family: 'Open Sans';
+}
+
+.transwest_nav_collapse ul.navbar-nav li.nav-item a {
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+  color: #006eb6;
+  text-transform: uppercase;
+}
+
+.transwest_nav_collapse ul.navbar-nav li.nav-item a:not(.active):hover, .transwest_nav_collapse ul.navbar-nav li.nav-item a:not(.active):active, .transwest_nav_collapse ul.navbar-nav li.nav-item a:not(.active):focus {
+  opacity: 0.7;
+  color: #006eb6;
+}
+
+.transwest_nav_collapse ul.navbar-nav li.nav-item a.active {
+  color: #222 !important;
+  pointer-events: none;
+}
+
+.transwest_nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.transwest_nav.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  border-bottom: 1px solid #EEE;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.transwest_nav.sticky.show {
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.transwest_logo_image {
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+  display: block;
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+}
+
+.transwest_nav.sticky .transwest_logo_image {
+  max-width: 70px !important;
+}
+
+.transwest_logo_link {
+  -webkit-transition: opacity 0.3s 0s ease;
+  -moz-transition: opacity 0.3s 0s ease;
+  -o-transition: opacity 0.3s 0s ease;
+  transition: opacity 0.3s 0s ease;
+}
+
+.transwest_logo_link:hover, .transwest_logo_link:active, .transwest_logo_link:focus {
+  opacity: 0.7;
+}
+
+.transwest_navinner {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.transwest_navinner .transwest_nav_column {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.transwest_navinner .transwest_nav_column:first-of-type {
+  width: 28%;
+}
+
+.transwest_navinner .transwest_nav_column:last-of-type {
+  width: 72%;
+  padding-left: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container {
+  max-width: 1600px !important;
+  padding: 0;
+}
+
+.transwest_hero_main {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/img/heroimage.jpg');
+  background-position: center center;
+  margin: 0;
+}
+
+.transwest_jumbo_inner {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding: 25px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(0,110,182, 0.85);
+}
+
+.transwest_jumbo_inner h1 {
+  display: block;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.transwest_jumbo_inner p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFF;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.transwest_nav .navbar-toggler {
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  padding: 0 !important;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  color: #FFF !important;
+}
+
+.transwest_nav .navbar-toggler:hover, .transwest_nav .navbar-toggler:active, .transwest_nav .navbar-toggler:focus {
+  background-color: #006eb6;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../assets/img/menu.svg);
+  filter: invert(10%) sepia(2%) saturate(405%) hue-rotate(314deg) brightness(97%) contrast(90%);
+}
+
+.transwest_nav .navbar-toggler:hover .navbar-toggler-icon, .transwest_nav .navbar-toggler:active .navbar-toggler-icon, .transwest_nav .navbar-toggler:focus .navbar-toggler-icon {
+  filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(11deg) brightness(93%) contrast(108%) !important;
+}
+
+.transwest_section {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.transwest_section.gray {
+  background-color: #EEE;
+}
+
+.transwest_section.dark {
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transwest_section.blue {
+  background-color: #006eb6;
+}
+
+.transwest_section.blue .transwest_title_wline h2 {
+  color: #FFF;
+}
+
+.transwest_section.blue .transwest_title_wline div.twline {
+  background-color: #FFF;
+}
+
+.transwest_title_wline {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.transwest_title_wline h2 {
+  display: block;
+  width: 100%;
+  color: #006eb6;
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.transwest_title_wline div.twline {
+  display: inline-block;
+  width: 40%;
+  max-width: 200px;
+  min-width: 50px;
+  height: 5px;
+  background: #006eb6;
+}
+
+.transwest_attributecol img {
+  display: block;
+  width: 90px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.transwest_attributecol h3 {
+  display: block;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.transwest_attributecol p {
+  display: block;
+  font-size: 19px;
+  line-height: 22px;
+  color: #222;
+  width: 100%;
+  text-align: center;
+}
+
+.transwest_generalone_paragraph {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  padding-top: 7px;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.transwest_generalone_image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.transwest_generalone_documentholder {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.transwest_generalone_documentholder img {
+  display: inline-block;
+  width: 70px;
+}
+
+.transwest_generalone_documentholder .twg_button_holder {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.twf_button_holder {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.transwest_button {
+  -webkit-transition: opacity 0.3s 0s ease;
+  -moz-transition: opacity 0.3s 0s ease;
+  -o-transition: opacity 0.3s 0s ease;
+  transition: opacity 0.3s 0s ease;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  line-height: 19px;
+  height: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+}
+
+.transwest_button:hover, .transwest_button:active, .transwest_button:focus {
+  opacity: 0.7;
+}
+
+.transwest_button.dark {
+  background-color: #006eb6 !important;
+  color: #FFF;
+}
+
+.transwest_button.light {
+  background-color: #FFF !important;
+  color: #006eb6;
+}
+
+.transwest_button.light:hover, .transwest_button.light:active, .transwest_button.light:focus {
+  color: #006eb6;
+}
+
+.transwest_button.dark:hover, .transwest_button.dark:active, .transwest_button.dark:focus {
+  color: #FFF;
+}
+
+.transwest_noretraint_col {
+  background-color: rgba(0,110,182, 0.85) !important;
+}
+
+.generaltwo_bg {
+  background-image: url('../../assets/img/general_two_image_compressed.jpg');
+}
+
+.transwest_mix_image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.transwest_table thead {
+  background-color: #006eb6;
+}
+
+.transwest_table thead tr th {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFF;
+  box-sizing: border-box;
+  flex-flow: column wrap;
+}
+
+.transwest_table tbody tr td {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 19px;
+  color: #222;
+  border: none;
+}
+
+.transwest_table tbody tr:nth-child(odd) {
+  background-color: #FFF;
+  border: none;
+}
+
+.transwest_table tbody tr:nth-child(even) {
+  background-color: #EEE;
+  border: none;
+}
+
+.transwest_table_title {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.transwest_photolink {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: #000;
+}
+
+.transwest_photolink img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.transwest_photolink:after {
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,110,182,0.8);
+  background-size: 35px 35px;
+  background-position: center;
+  background-image: url('../../assets/img/magnifyingglass-01.png');
+  background-repeat: no-repeat;
+  visibility: hidden;
+  transform-origin: center;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.transwest_photolink:hover:after, .transwest_photolink:hover:active, .transwest_photolink:hover:focus {
+  visibility: visible;
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+#baguetteBox-overlay {
+  background-color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.transwest_youtube {
+  display: block;
+  width: 100%;
+  max-width: 992px;
+}
+
+.transwest_mapsection {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.transwest_mapiframe {
+  display: block;
+  width: 100% !important;
+}
+
+.transwest_contact_card {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.transwest_contact_card .transwest_contact_card_info h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 7px;
+}
+
+.transwest_contact_card .transwest_contact_card_info p {
+  color: #FFF;
+  margin-bottom: 3px;
+}
+
+.transwest_contact_card_email img {
+  display: inline-block;
+  width: 100%;
+}
+
+.transwest_contact_card_email a {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  color: #FFF;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.transwest_contact_card_email a:hover, .transwest_contact_card_email a:active, .transwest_contact_card_email a:focus {
+  opacity: 0.7;
+}
+
+.transwest_contact_card .transwest_contact_card_image img {
+  display: inline-block;
+  object-fit: cover;
+}
+
+.transwest_contact_dots {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-image: url('../../assets/img/lineimageforrepeat-01.png');
+  background-repeat: repeat-x;
+  background-size: 46.35px 2.5px;
+}
+
+.transwest_footerlogo {
+  display: inline-block;
+  width: auto;
+  max-width: 280px;
+  margin-bottom: 30px;
+}
+
+.transwest_footer_basicinfo h4 {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 700;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.transwest_footer_basicinfo p {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  color: #FFF;
+}
+
+.transwest_socialicons {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.transwest_socialicons a {
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+  display: inline-block;
+  line-height: 0;
+  padding: 17px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.transwest_socialicons a:hover, .transwest_socialicons a:active, .transwest_socialicons a:focus {
+  background-color: #FFF;
+}
+
+.transwest_socialicons a img {
+  filter: invert(99%) sepia(59%) saturate(0%) hue-rotate(188deg) brightness(114%) contrast(100%);
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.transwest_socialicons a:hover img, .transwest_socialicons a:active img, .transwest_socialicons a:focus img {
+  filter: invert(23%) sepia(70%) saturate(2662%) hue-rotate(186deg) brightness(99%) contrast(102%);
+}
+
+.transwest_footer {
+  display: block;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000;
+}
+
+.transwest_footer p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.transwest_footer p a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.transwest_footer p a:hover, .transwest_footer p a:active, .transwest_footer p a:focus {
+  opacity: 0.7;
+}
+
+@media (max-width: 991.9px) {
+  .transwest_navinner .transwest_nav_column:last-of-type .navbar-collapse {
+    position: absolute !important;
+    left: 0;
+    top: 100%;
+    background: #EEE;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_navinner .transwest_nav_column:last-of-type .navbar-collapse {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_navinner .transwest_nav_column:last-of-type {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_nav {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_nav {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_nav {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_hero_main {
+    padding-left: 25px;
+    padding-right: 25px;
+    min-height: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_hero_main {
+    padding-left: 45px;
+    padding-right: 45px;
+    min-height: 70vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_hero_main {
+    padding-left: 65px;
+    padding-right: 65px;
+    min-height: 78vh;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_jumbo_inner h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_jumbo_inner h1 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .transwest_nav_collapse ul.navbar-nav li.nav-item a {
+    margin-right: 7px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 991.9px) {
+  .transwest_nav_collapse ul.navbar-nav li.nav-item:last-of-type a {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_nav_collapse ul.navbar-nav li.nav-item a {
+    margin-right: 7px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_nav_collapse ul.navbar-nav {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .transwest_nav_collapse ul.navbar-nav {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_section {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_section {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_generalone_image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_generalone_image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 920px) {
+  .transwest_generalone_image {
+    height: 600px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_mix_image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_mix_image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_mix_image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_youtube {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_youtube {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_youtube {
+    height: 550px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_mapiframe {
+    height: 350px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_mapiframe {
+    height: 450px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_mapiframe {
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_image {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_info {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_info {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 25% - 150px);
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_email {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_email {
+    display: block;
+    width: 25%;
+    padding-left: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card_email img {
+    max-width: 80px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card_email img {
+    max-width: 100px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_info h4 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_info h4 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_info p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_info p {
+    text-align: left;
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_contact_card .transwest_contact_card_info p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1999.9px) {
+  .transwest_contact_card .transwest_contact_card_info h4 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .transwest_contact_card .transwest_contact_card_info h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_contact_card .transwest_contact_card_image img {
+    width: 100%;
+    max-width: 240px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card .transwest_contact_card_image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .transwest_footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_footer {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transwest_footer {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transwest_contact_card_email a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
