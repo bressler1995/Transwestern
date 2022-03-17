@@ -52,6 +52,16 @@ $('.link-scroll').on('click', function (e) {
     
 });
 
+$('.link-scroll-alt').on('click', function (e) {
+    var anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top - transwest_nav.clientHeight
+    }, 1000);
+
+    e.preventDefault();
+    
+});
+
 $('.logo-scroll').on('click', function (e) {
     var anchor = $(this);
     $('html, body').stop().animate({
